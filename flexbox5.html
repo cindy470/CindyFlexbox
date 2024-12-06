@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            padding: 4px;
+            gap: 4px;
+            height: calc(100vh - 8px);
+        }
+
+        nav {
+            border: 1px solid black;
+            gap: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding: 4px;
+        }
+
+        .nav-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .nav-box {
+            background: red;
+            height: 30px;
+            width: 40px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        main {
+            border: 1px solid black;
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .main-section {
+            width: 280px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            gap: 4px;   
+            padding: 4px;
+            align-content: center;
+        }
+
+        .main-box {
+            border: 1px solid black; 
+            height: 65px;
+            width: 65px;
+        }
+
+        aside {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 4px;
+        }
+
+        .aside-item {
+            width: 20vw;
+            border: 1px solid black;
+            height: 4vh;
+        }
+
+        .indicator {
+            background: red;
+            height: 40px;
+            width: 40px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 4px;
+            align-items: center;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+        }
+
+        .footer-box {
+            background: red;
+            height: 20px;
+            width: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-header">
+            <div class="indicator"></div>
+            <div>FLEXBOX</div>
+        </div>
+        <div class="nav-buttons">
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+            <div class="nav-box"></div>
+        </div>
+    </nav>
+    
+    <div class="content-wrapper">
+        <main>
+            <div class="main-section">
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+            </div>
+            <div class="main-section">
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+                <div class="main-box"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+            <div class="aside-item"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div class="indicator"></div>
+            <div class="footer-text">
+                <div>FLEXBOX</div>
+                <p>&copy;Copy All rights reserved.</p>
+            </div>
+        </div>
+        
+        <div class="footer-right">
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+            <div class="footer-box"></div>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX6</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        height: calc(100vh - 8px);
+        gap: 4px;
+    }
+
+    nav, main, aside, footer {
+        border: 1px solid black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .nav-left {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .nav-right {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .box-red-small {
+        background: red;
+        height: 30px;
+        width: 30px;
+    }
+
+    .box-red-rectangle {
+        background: red;
+        height: 25px;
+        width: 60px;
+    }
+
+    .container-content {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+        padding: 4px;
+        gap: 10px;
+    }
+
+    .box-main-wrapper {
+        display: flex;
+        padding: 10px;
+        border: 1px solid black;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 50%;
+        align-content: flex-start;
+    }
+
+    .box-main-alternate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 50px;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .box-aside {
+        display: flex;
+        border: 1px solid black;
+        width: 15vw;
+        height: 5vh;
+    }
+
+    .box-small {
+        border: 1px solid black;
+        height: 90px;
+        width: 90px;
+    }
+
+    .box-big {
+        border: 1px solid black;
+        height: 150px;
+        width: 230px;
+    }
+
+    footer {
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .footer-top {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-red-boxes {
+        display: flex;
+        gap: 4px;
+        flex-direction: row;
+    }
+
+    .box-footer-small {
+        background: red;
+        height: 20px;
+        width: 20px;
+    }
+
+    .divider {
+        padding: 4px;
+    }
+</style>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="box-red-small"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="box-red-rectangle"></div>
+            <div class="box-red-rectangle"></div>
+        </div>
+    </nav>
+    <div class="container-content">
+        <main>
+            <div class="box-main-wrapper">
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+                <div class="box-small"></div>
+            </div>
+            <div class="box-main-wrapper box-main-alternate">
+                <div class="box-big"></div>
+                <div class="box-big"></div>
+                <div class="box-big"></div>
+                <div class="box-big"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+            <div class="box-aside"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="box-red-small"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="divider">
+            <hr>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-red-boxes">
+                <div class="box-footer-small"></div>
+                <div class="box-footer-small"></div>
+                <div class="box-footer-small"></div>
+                <div class="box-footer-small"></div>
+                <div class="box-footer-small"></div>
+            </div>
+            <div class="text">
+                <p>@Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
